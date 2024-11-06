@@ -11,5 +11,5 @@ import { RouterOutlet } from '@angular/router';
 export class AppComponent {
   title = 'Séance n°1';
   description =
-    'Prise en main d’Angular, première application, liaisons des données';
+    "Prise en main d'Angular, première application, liaisons des données";
 }

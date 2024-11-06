@@ -28,7 +28,12 @@
               "node_modules/bootstrap/dist/css/bootstrap.css",
               "src/styles.css"
             ],
-            "scripts": []
+            "scripts": [],
+            "server": "src/main.server.ts",
+            "prerender": true,
+            "ssr": {
+              "entry": "server.ts"
+            }
           },
           "configurations": {
             "production": {
@@ -88,6 +93,6 @@
     }
   },
   "cli": {
-    "analytics": "e867b32f-3d8e-42f9-a81d-d0f1453958b1"
+    "analytics": false
   }
 }
