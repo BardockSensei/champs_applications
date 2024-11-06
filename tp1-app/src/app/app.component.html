@@ -1,0 +1,20 @@
+<style>
+  .main {
+    width: 100vw;
+    height: 100vh;
+    background-color: azure;
+    display: flex;
+    justify-content: center;
+    /*align-items: center;*/
+  }
+</style>
+
+<main class="main">
+  <div class="content">
+    <h1>Champs Application</h1>
+    <h2 class="text-success">{{ title }}</h2>
+    <p class="bg-info">{{ description }}</p>
+  </div>
+</main>
+
+<router-outlet />
