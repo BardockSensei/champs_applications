@@ -1,0 +1,542 @@
+[
+  {
+    "id": 1,
+    "title": "Dune",
+    "author": "Frank Herbert",
+    "date": 1965,
+    "type": "science fiction",
+    "availability": true,
+    "isbn": 9780441172719
+  },
+  {
+    "id": 2,
+    "title": "Pride and Prejudice",
+    "author": "Jane Austen",
+    "date": 1813,
+    "type": "romance",
+    "availability": true,
+    "isbn": 9780141439518
+  },
+  {
+    "id": 3,
+    "title": "The Great Gatsby",
+    "author": "F. Scott Fitzgerald",
+    "date": 1925,
+    "type": "classic",
+    "availability": true,
+    "isbn": 9780743273565
+  },
+  {
+    "id": 4,
+    "title": "The Shining",
+    "author": "Stephen King",
+    "date": 1977,
+    "type": "thriller",
+    "availability": true,
+    "isbn": 978030774365
+  },
+  {
+    "id": 5,
+    "title": "The Art of War",
+    "author": "Sun Tzu",
+    "date": 500,
+    "type": "philosophy",
+    "availability": true,
+    "isbn": 978159986977
+  },
+  {
+    "id": 6,
+    "title": "Sapiens: A Brief History of Humankind",
+    "author": "Yuval Noah Harari",
+    "date": 2011,
+    "type": "non-fiction",
+    "availability": true,
+    "isbn": 978006231609
+  },
+  {
+    "id": 7,
+    "title": "Harry Potter and the Philosopher's Stone",
+    "author": "J.K. Rowling",
+    "date": 1997,
+    "type": "fantasy",
+    "availability": true,
+    "isbn": 9780747532699
+  },
+  {
+    "id": 8,
+    "title": "One Piece, Vol. 1",
+    "author": "Eiichiro Oda",
+    "date": 1997,
+    "type": "manga",
+    "availability": true,
+    "isbn": 9781569319017
+  },
+  {
+    "id": 9,
+    "title": "To Kill a Mockingbird",
+    "author": "Harper Lee",
+    "date": 1960,
+    "type": "classic",
+    "availability": false,
+    "isbn": 9780060935467
+  },
+  {
+    "id": 10,
+    "title": "Les Misérables",
+    "author": "Victor Hugo",
+    "date": 1862,
+    "type": "classic",
+    "availability": true,
+    "isbn": 9780192833908
+  },
+  {
+    "id": 11,
+    "title": "Astérix le Gaulois",
+    "author": "René Goscinny et Albert Uderzo",
+    "date": 1961,
+    "type": "bd",
+    "availability": true,
+    "isbn": 9782012101282
+  },
+  {
+    "id": 12,
+    "title": "Le Petit Prince",
+    "author": "Antoine de Saint-Exupéry",
+    "date": 1943,
+    "type": "children",
+    "availability": true,
+    "isbn": 9780156012195
+  },
+  {
+    "id": 13,
+    "title": "Moby Dick",
+    "author": "Herman Melville",
+    "date": 1851,
+    "type": "classic",
+    "availability": false,
+    "isbn": 9780142437247
+  },
+  {
+    "id": 14,
+    "title": "Naruto, Vol. 1",
+    "author": "Masashi Kishimoto",
+    "date": 1999,
+    "type": "manga",
+    "availability": true,
+    "isbn": 9781569319000
+  },
+  {
+    "id": 15,
+    "title": "1984",
+    "author": "George Orwell",
+    "date": 1949,
+    "type": "dystopian",
+    "availability": true,
+    "isbn": 9780451524935
+  },
+  {
+    "id": 16,
+    "title": "The Catcher in the Rye",
+    "author": "J.D. Salinger",
+    "date": 1951,
+    "type": "classic",
+    "availability": false,
+    "isbn": 9780316769488
+  },
+  {
+    "id": 17,
+    "title": "Les Fleurs du mal",
+    "author": "Charles Baudelaire",
+    "date": 1857,
+    "type": "poetry",
+    "availability": true,
+    "isbn": 9782253084531
+  },
+  {
+    "id": 18,
+    "title": "The Hobbit",
+    "author": "J.R.R. Tolkien",
+    "date": 1937,
+    "type": "fantasy",
+    "availability": true,
+    "isbn": 9780345339683
+  },
+  {
+    "id": 19,
+    "title": "Le Deuxième Sexe",
+    "author": "Simone de Beauvoir",
+    "date": 1949,
+    "type": "philosophy",
+    "availability": false,
+    "isbn": 9782070113175
+  },
+  {
+    "id": 20,
+    "title": "Thinking, Fast and Slow",
+    "author": "Daniel Kahneman",
+    "date": 2011,
+    "type": "non-fiction",
+    "availability": true,
+    "isbn": 9780374533557
+  },
+  {
+    "id": 21,
+    "title": "Watchmen",
+    "author": "Alan Moore",
+    "date": 1986,
+    "type": "graphic novel",
+    "availability": true,
+    "isbn": 9780930289232
+  },
+  {
+    "id": 22,
+    "title": "Les Trois Mousquetaires",
+    "author": "Alexandre Dumas",
+    "date": 1844,
+    "type": "adventure",
+    "availability": true,
+    "isbn": 9782070414845
+  },
+  {
+    "id": 23,
+    "title": "The Alchemist",
+    "author": "Paulo Coelho",
+    "date": 1988,
+    "type": "fiction",
+    "availability": false,
+    "isbn": 9780061122415
+  },
+  {
+    "id": 24,
+    "title": "Dragon Ball, Vol. 1",
+    "author": "Akira Toriyama",
+    "date": 1984,
+    "type": "manga",
+    "availability": true,
+    "isbn": 9781569319208
+  },
+  {
+    "id": 25,
+    "title": "Crime and Punishment",
+    "author": "Fyodor Dostoevsky",
+    "date": 1866,
+    "type": "classic",
+    "availability": true,
+    "isbn": 9780140449136
+  },
+  {
+    "id": 26,
+    "title": "The Road",
+    "author": "Cormac McCarthy",
+    "date": 2006,
+    "type": "post-apocalyptic",
+    "availability": false,
+    "isbn": 9780307387899
+  },
+  {
+    "id": 27,
+    "title": "Hamlet",
+    "author": "William Shakespeare",
+    "date": 1603,
+    "type": "classic",
+    "availability": true,
+    "isbn": 9780743477123
+  },
+  {
+    "id": 28,
+    "title": "The Brothers Karamazov",
+    "author": "Fyodor Dostoevsky",
+    "date": 1880,
+    "type": "philosophy",
+    "availability": true,
+    "isbn": 9780374528379
+  },
+  {
+    "id": 29,
+    "title": "Brave New World",
+    "author": "Aldous Huxley",
+    "date": 1932,
+    "type": "dystopian",
+    "availability": true,
+    "isbn": 9780060850524
+  },
+  {
+    "id": 30,
+    "title": "Jeanne la fille du docteur Loiseau",
+    "author": "Carole Trébor",
+    "date": 2020,
+    "type": "horror",
+    "availability": true,
+    "isbn": 9782226454713
+  },
+  {
+    "id": 31,
+    "title": "The Grapes of Wrath",
+    "author": "John Steinbeck",
+    "date": 1939,
+    "type": "classic",
+    "availability": true,
+    "isbn": 9780143039433
+  },
+  {
+    "id": 32,
+    "title": "The Road to Serfdom",
+    "author": "Friedrich Hayek",
+    "date": 1944,
+    "type": "political philosophy",
+    "availability": true,
+    "isbn": 9780226320557
+  },
+  {
+    "id": 33,
+    "title": "La Nausée",
+    "author": "Jean-Paul Sartre",
+    "date": 1938,
+    "type": "philosophy",
+    "availability": true,
+    "isbn": 9782070368056
+  },
+  {
+    "id": 34,
+    "title": "Goodnight Moon",
+    "author": "Margaret Wise Brown",
+    "date": 1947,
+    "type": "children",
+    "availability": true,
+    "isbn": 9780060775858
+  },
+  {
+    "id": 35,
+    "title": "Don Quixote",
+    "author": "Miguel de Cervantes",
+    "date": 1605,
+    "type": "classic",
+    "availability": true,
+    "isbn": 9780060934347
+  },
+  {
+    "id": 36,
+    "title": "Anne of Green Gables",
+    "author": "L. M. Montgomery",
+    "date": 1908,
+    "type": "children",
+    "availability": true,
+    "isbn": 9780553213133
+  },
+  {
+    "id": 37,
+    "title": "Frankenstein",
+    "author": "Mary Shelley",
+    "date": 1818,
+    "type": "horror",
+    "availability": false,
+    "isbn": 9780486282114
+  },
+  {
+    "id": 38,
+    "title": "Bleach, Vol. 1",
+    "author": "Tite Kubo",
+    "date": 2001,
+    "type": "manga",
+    "availability": true,
+    "isbn": 9781591164417
+  },
+  {
+    "id": 39,
+    "title": "Meditations",
+    "author": "Marcus Aurelius",
+    "date": 180,
+    "type": "philosophy",
+    "availability": true,
+    "isbn": 9780486298238
+  },
+  {
+    "id": 40,
+    "title": "The Picture of Dorian Gray",
+    "author": "Oscar Wilde",
+    "date": 1890,
+    "type": "classic",
+    "availability": true,
+    "isbn": 9780141439570
+  },
+  {
+    "id": 41,
+    "title": "Charlotte's Web",
+    "author": "E. B. White",
+    "date": 1952,
+    "type": "children",
+    "availability": true,
+    "isbn": 9780064400550
+  },
+  {
+    "id": 42,
+    "title": "Lolita",
+    "author": "Vladimir Nabokov",
+    "date": 1955,
+    "type": "fiction",
+    "availability": false,
+    "isbn": 9780679723165
+  },
+  {
+    "id": 43,
+    "title": "Macbeth",
+    "author": "William Shakespeare",
+    "date": 1606,
+    "type": "classic",
+    "availability": true,
+    "isbn": 9780743477109
+  },
+  {
+    "id": 44,
+    "title": "The Lord of the Rings",
+    "author": "J.R.R. Tolkien",
+    "date": 1954,
+    "type": "fantasy",
+    "availability": true,
+    "isbn": 9780544003415
+  },
+  {
+    "id": 45,
+    "title": "Akira, Vol. 1",
+    "author": "Katsuhiro Otomo",
+    "date": 1984,
+    "type": "manga",
+    "availability": true,
+    "isbn": 9781935429005
+  },
+  {
+    "id": 46,
+    "title": "Catch-22",
+    "author": "Joseph Heller",
+    "date": 1961,
+    "type": "fiction",
+    "availability": true,
+    "isbn": 9781451626650
+  },
+  {
+    "id": 47,
+    "title": "A Brief History of Time",
+    "author": "Stephen Hawking",
+    "date": 1988,
+    "type": "non-fiction",
+    "availability": true,
+    "isbn": 9780553380163
+  },
+  {
+    "id": 48,
+    "title": "The Stranger",
+    "author": "Albert Camus",
+    "date": 1942,
+    "type": "philosophy",
+    "availability": true,
+    "isbn": 9780679720201
+  },
+  {
+    "id": 49,
+    "title": "The Call of the Wild",
+    "author": "Jack London",
+    "date": 1903,
+    "type": "adventure",
+    "availability": true,
+    "isbn": 9780486264721
+  },
+  {
+    "id": 50,
+    "title": "Persuasion",
+    "author": "Jane Austen",
+    "date": 1818,
+    "type": "romance",
+    "availability": true,
+    "isbn": 9780141439686
+  },
+  {
+    "id": 51,
+    "title": "The Very Hungry Caterpillar",
+    "author": "Eric Carle",
+    "date": 1969,
+    "type": "children",
+    "availability": true,
+    "isbn": 9780399226908
+  },
+  {
+    "id": 52,
+    "title": "The Divine Comedy",
+    "author": "Dante Alighieri",
+    "date": 1320,
+    "type": "classic",
+    "availability": true,
+    "isbn": 9780142437223
+  },
+  {
+    "id": 53,
+    "title": "Death Note, Vol. 1",
+    "author": "Tsugumi Ohba",
+    "date": 2003,
+    "type": "manga",
+    "availability": true,
+    "isbn": 9781421501680
+  },
+  {
+    "id": 54,
+    "title": "Little Women",
+    "author": "Louisa May Alcott",
+    "date": 1868,
+    "type": "classic",
+    "availability": true,
+    "isbn": 9780142408767
+  },
+  {
+    "id": 55,
+    "title": "A Game of Thrones",
+    "author": "George R.R. Martin",
+    "date": 1996,
+    "type": "fantasy",
+    "availability": true,
+    "isbn": 9780553573404
+  },
+  {
+    "id": 56,
+    "title": "Candide",
+    "author": "Voltaire",
+    "date": 1759,
+    "type": "philosophy",
+    "availability": true,
+    "isbn": 9780143039426
+  },
+  {
+    "id": 57,
+    "title": "Jane Eyre",
+    "author": "Charlotte Brontë",
+    "date": 1847,
+    "type": "classic",
+    "availability": true,
+    "isbn": 9780141441146
+  },
+  {
+    "id": 58,
+    "title": "In Search of Lost Time",
+    "author": "Marcel Proust",
+    "date": 1913,
+    "type": "classic",
+    "availability": true,
+    "isbn": 9780142437964
+  },
+  {
+    "id": 59,
+    "title": "The Republic",
+    "author": "Plato",
+    "date": -380,
+    "type": "philosophy",
+    "availability": true,
+    "isbn": 9780140455113
+  },
+  {
+    "id": 60,
+    "title": "The Tale of Genji",
+    "author": "Murasaki Shikibu",
+    "date": 1021,
+    "type": "classic",
+    "availability": true,
+    "isbn": 9780142437148
+  }
+]

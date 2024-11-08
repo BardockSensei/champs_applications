@@ -1,22 +1,30 @@
 import { Component, Input } from '@angular/core';
 import { Book } from '../book.model';
 import { CommonModule } from '@angular/common';
+import { PaginationComponent } from './pagination/pagination.component';
 
 @Component({
   selector: 'app-book',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, PaginationComponent],
   templateUrl: './book.component.html',
   styleUrl: './book.component.css',
 })
 export class BookComponent {
   // Un objet pour gérer l'état des colonnes pour les trier
   sortState: { [key: string]: boolean | null } = {
+    id: null,
     title: null,
     author: null,
     date: null,
     type: null,
   };
+
+  pageOfBooks?: Book[];
+
+  onChangePage(pageOfBooks: Book[]) {
+    this.pageOfBooks = pageOfBooks;
+  }
 
   // par défaut, une liste vide, mais on récupère l'input que le parent nous donne
   @Input() books: Book[] = [];
@@ -52,6 +60,8 @@ export class BookComponent {
       }
     }
 
+    console.log(this.sortState);
+
     // Tri de la liste
     this.books.sort((a, b) => {
       const sortOrder = this.sortState[columnName] ? 1 : -1;
@@ -60,5 +70,7 @@ export class BookComponent {
 
       return aValue < bValue ? -1 * sortOrder : 1 * sortOrder;
     });
+
+    this.onChangePage(this.books.slice(0, 10));
   }
 }

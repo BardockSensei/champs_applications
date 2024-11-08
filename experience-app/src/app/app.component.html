@@ -2,11 +2,11 @@
 <style></style>
 
 <div class="content" role="main">
-  <h1>{{ title }}</h1>
+  <div class="card m-3">
+    <h3 class="card-header text-center">{{ title }}</h3>
 
-  <!-- voilà comment on appelle un composant enfant, 
-  on peut lui passer des inputs qui pourront lui être utile... -->
-  <div class="container">
+    <!-- voilà comment on appelle un composant enfant, 
+      on peut lui passer des inputs qui pourront lui être utile... -->
     <app-book [books]="books"></app-book>
   </div>
 
