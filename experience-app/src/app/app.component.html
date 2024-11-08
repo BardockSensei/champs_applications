@@ -1,0 +1,15 @@
+<!-- Composant parent -->
+<style></style>
+
+<div class="content" role="main">
+  <h1>{{ title }}</h1>
+
+  <!-- voilà comment on appelle un composant enfant, 
+  on peut lui passer des inputs qui pourront lui être utile... -->
+  <div class="container">
+    <app-book [books]="books"></app-book>
+  </div>
+
+  <router-outlet />
+  <!--utile ?-->
+</div>

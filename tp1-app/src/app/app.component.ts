@@ -6,10 +6,8 @@ import { RouterOutlet } from '@angular/router';
   standalone: true,
   imports: [RouterOutlet],
   templateUrl: './app.component.html',
-  styleUrl: './app.component.css',
+  styleUrl: './app.component.css'
 })
 export class AppComponent {
-  title = 'Séance n°1';
-  description =
-    "Prise en main d'Angular, première application, liaisons des données";
+  title = 'tp1-app';
 }

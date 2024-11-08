@@ -1,0 +1,65 @@
+<!-- Composant enfant -->
+<table class="table table-bordered table-hover">
+  <thead>
+    <tr>
+      <th
+        class="sortable"
+        [ngClass]="{
+          asc: this.sortState['title'] == true,
+          desc: this.sortState['title'] == false
+        }"
+        (click)="sortBooks('title')"
+      >
+        Titre
+      </th>
+      <th
+        class="sortable"
+        [ngClass]="{
+          asc: this.sortState['author'] == true,
+          desc: this.sortState['author'] == false
+        }"
+        (click)="sortBooks('author')"
+      >
+        Auteur
+      </th>
+      <th
+        class="sortable"
+        [ngClass]="{
+          asc: this.sortState['date'] == true,
+          desc: this.sortState['date'] == false
+        }"
+        (click)="sortBooks('date')"
+      >
+        Date
+      </th>
+      <th
+        class="sortable"
+        [ngClass]="{
+          asc: this.sortState['type'] == true,
+          desc: this.sortState['type'] == false
+        }"
+        (click)="sortBooks('type')"
+      >
+        Genre
+      </th>
+      <th>ISBN</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    @if (this.books.length > 0) { @for (book of books; track book.id) {
+    <tr>
+      <td>{{ book.title }}</td>
+      <td>{{ book.author }}</td>
+      <td>{{ book.date }}</td>
+      <td>{{ book.type }}</td>
+      <!-- Juste pour test -->
+      <td>{{ displayBookISBN(book) }}</td>
+    </tr>
+    } }@else {
+    <tr>
+      <td colspan="5">Il n'y a aucun livre.</td>
+    </tr>
+    }
+  </tbody>
+</table>
