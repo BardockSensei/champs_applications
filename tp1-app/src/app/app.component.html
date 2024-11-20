@@ -1,8 +1,6 @@
-<div
-  class="d-flex flex-column align-items-center justify-content-center"
-  role="main"
->
+<div class="d-flex flex-column align-items-center justify-content-center" role="main">
   <h1>Cours champs d'applications</h1>
+  <!-- interpolation -->
   <h2 class="text-success">{{ title }}</h2>
   <p class="bg-info">{{ description }}</p>
 
@@ -10,29 +8,30 @@
     <div class="row">
       <div class="col-xs-12">
         <h2>Liste étudiants :</h2>
-        @for(etudiant of etudiants; track etudiant.nom) {
-        <app-etudiant
-          [nomEtudiant]="etudiant.nom"
-          [prenomEtudiant]="etudiant.prenom"
-          [statutEtudiant]="etudiant.statut"
-        ></app-etudiant>
-        }
+        <ul class="list-group">
+          @for(etudiant of etudiants; track etudiant.nom) {
+          <app-etudiant
+            [nomEtudiant]="etudiant.nom"
+            [prenomEtudiant]="etudiant.prenom"
+            [statutEtudiant]="etudiant.statut"
+            [commentaire]="commentaireSeance"
+          ></app-etudiant>
+          }
+        </ul>
 
-        <button
-          class="btn btn-success"
-          [disabled]="!estAuth"
-          (click)="rendTousPres()"
-        >
-          Tous présents
-        </button>
+        <!-- Property binding et Event binding -->
+        <button class="btn btn-success m-2" [disabled]="!estAuth" (click)="rendTousPres()">Tous présents</button>
 
-        <button
-          class="btn btn-danger"
-          [disabled]="!estAuth"
-          (click)="rendTousAbs()"
-        >
-          Tous absents
-        </button>
+        <button class="btn btn-danger m-2" [disabled]="!estAuth" (click)="rendTousAbs()">Tous absents</button>
+
+        <br />
+        <label>Enregistrer un commentaire :</label>
+        <!-- Two Ways Binding avec formulaire (FormsModule)-->
+        <input type="text" class="form-control" [(ngModel)]="commentaireSeance" />
+        <br />
+
+        <p>Voilà votre commentaire :</p>
+        <p class="bg-info">{{ commentaireSeance }}</p>
       </div>
     </div>
   </div>
