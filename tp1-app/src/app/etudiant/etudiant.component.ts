@@ -11,10 +11,8 @@ import { CommonModule } from "@angular/common";
 export class EtudiantComponent {
   @Input() nomEtudiant: String = "";
   @Input() prenomEtudiant: String = "";
-
   @Input() statutEtudiant: String = "absent";
   @Input() commentaire: String = "...";
-
   @Input() derniereModif: Date = new Date();
 
   retNomEtudiant() {
@@ -25,11 +23,20 @@ export class EtudiantComponent {
     return this.prenomEtudiant;
   }
 
+  estAbsent() {
+    return this.statutEtudiant == "absent";
+  }
+
   getColorEtu() {
     return this.statutEtudiant == "absent" ? "#FF0000" : "#000000";
   }
 
-  estPresent() {
-    return !(this.statutEtudiant == "absent");
+  getClassEtu() {
+    return this.statutEtudiant == "absent" ? "list-group-item-danger" : "list-group-item-success";
+  }
+
+  majStatut(nouveauStatut: String) {
+    this.statutEtudiant = nouveauStatut;
+    this.derniereModif = new Date();
   }
 }

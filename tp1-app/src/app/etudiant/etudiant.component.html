@@ -1,15 +1,13 @@
-<li
-  class="card card-small border-1 mb-1 list-group-item"
-  [ngClass]="estPresent() ? 'list-group-item-success' : 'list-group-item-danger'"
->
+<!-- passage par directives -->
+<li class="card card-small border-1 mb-1 list-group-item" [ngClass]="this.getClassEtu()">
   <h4 [ngStyle]="{ color: getColorEtu() }">
     <span class="text-primary">Nom:</span> {{ this.nomEtudiant }} <span class="text-primary"> - Prénom:</span>
     {{ this.retPrenomEtudiant() }} <span class="text-primary"> - Statut:</span> {{ this.statutEtudiant }}
     <span class="text-primary"> - Commentaire:</span> {{ this.commentaire }}
   </h4>
 
-  <p>{{ this.derniereModif }}</p>
+  <p>Dernière mise à jour : {{ this.derniereModif | date : "MMM d, y, h:mm:ss" }}</p>
 
-  <button class="btn btn-success me-1" (click)="this.statutEtudiant = 'présent'">Présent</button>
-  <button class="btn btn-danger ms-1" (click)="this.statutEtudiant = 'absent'">Absent</button>
+  <button class="btn btn-success me-1" (click)="this.majStatut('présent')" [disabled]="!estAbsent()">Présent</button>
+  <button class="btn btn-danger ms-1" (click)="this.majStatut('absent')" [disabled]="estAbsent()">Absent</button>
 </li>
