@@ -1,0 +1,29 @@
+<div class="container color-dark">
+  <div class="col">
+    <p>Un élément de liste</p>
+  </div>
+  <div class="col">
+    <p>Ma liste d'élément ({{ nbItems }})</p>
+  </div>
+</div>
+
+<div class="container color-light" [@animobjectifs]="objectifs.length">
+  <div class="col">
+    <p class="col">Un nouvel élément de liste</p>
+    <input
+      type="text"
+      class="txt"
+      [(ngModel)]="objectifText"
+      placeholder="..."
+    />
+    <input
+      type="submit"
+      class="btn"
+      value="{{ btnText }}"
+      (click)="ajoutItem()"
+    />
+  </div>
+  <div class="col">
+    <p *ngFor="let elt of objectifs" class="life-container">{{ elt }}</p>
+  </div>
+</div>
