@@ -1,0 +1,58 @@
+<h1 class="font-weight-bold">Détails de l'activité :</h1>
+<ol>
+  @if (!this.monParam && !this.monParam2) { Aucun Paramètre } @else if
+  (this.monParam && !this.monParam2) {
+  <li>
+    @if (!isEdit) {
+    <p>
+      Nom de l'activité :
+      <strong>{{ this.activiteService.objectifs[this.monParam] }}</strong>
+    </p>
+    } @else {
+    <div class="box">
+      <p>Nom de l'activité :</p>
+      <input
+        type="text"
+        class="txt"
+        [(ngModel)]="inputText"
+        placeholder="{{ this.activiteService.objectifs[this.monParam] }}"
+      />
+    </div>
+    }
+
+    <input
+      type="submit"
+      class="update-btn"
+      value="{{ isEdit ? 'Sauvegarder' : 'Modifier' }}"
+      (click)="modifierElem()"
+    />
+
+    <input
+      type="submit"
+      value="Supprimer"
+      class="delete-btn"
+      (click)="supprimeElem()"
+    />
+
+    @if (!isEdit) {
+    <input type="submit" value="Retour" class="btn" (click)="retour()" />
+    }
+  </li>
+
+  } @else {
+  <li>
+    Premier paramètre : <strong>{{ this.monParam }}</strong>
+  </li>
+  <li>
+    Deuxième paramètre : <strong>{{ this.monParam2 }}</strong>
+  </li>
+  }
+</ol>
+
+<!--suite init recherche 7 à 15 min de présentation 28 janvier évaluer cellle des autres
+truc classique et nul
+
+plutot choisir un pourquoi ? qui aene des comment
+
+etat de l'art ... notion et concept clé
+site de la bu-->

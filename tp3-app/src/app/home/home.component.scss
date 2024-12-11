@@ -9,9 +9,11 @@
 
 .color-dark {
   background: #2885c4;
+  transform: rotate(2deg);
 }
 .color-light {
   background: #57b3f1;
+  transform: rotate(-2deg);
 }
 
 input.txt {
@@ -29,6 +31,25 @@ input.btn {
   color: rgb(229, 239, 247);
   margin-bottom: 1em;
   cursor: pointer;
+  //transform: translateX(100px) scale(1);
+  transition-property: background-color padding;
+  transition-duration: 1s;
+}
+
+input.btnok {
+  border: 0;
+  display: block;
+  padding: 2em 4em;
+  color: rgb(209, 235, 244);
+  margin-bottom: 1em;
+  cursor: pointer;
+  //transform: translateX(100px) scale(1);
+  background-color: rgb(100, 200, 100);
+  transition-property: background-color padding;
+  transition-duration: 2s;
+}
+input.btnok:hover {
+  background-color: rgb(17, 150, 17);
 }
 
 .life-container {

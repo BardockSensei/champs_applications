@@ -10,6 +10,8 @@ import {
   query,
   stagger,
 } from '@angular/animations';
+import { Router } from '@angular/router';
+import { ActiviteService } from '../services/activite.service';
 
 @Component({
   selector: 'app-home',
@@ -56,14 +58,32 @@ export class HomeComponent {
   btnText: string = 'Ajouter un élément';
   objectifText: string = '';
 
-  objectifs: string[] = [];
+  constructor(
+    public activiteService: ActiviteService,
+    private monRouteur: Router
+  ) {}
 
   ngOnInit() {
-    this.nbItems = this.objectifs.length;
+    this.nbItems = this.activiteService.objectifs.length;
   }
 
   ajoutItem() {
-    this.objectifs.push(this.objectifText);
+    this.activiteService.objectifs.push(this.objectifText);
     this.nbItems++;
+    setTimeout(() => {
+      this.monRouteur.navigate(['about']);
+    }, 1000);
+  }
+
+  getAnimationClass() {
+    if (this.objectifText == '') {
+      return 'btn';
+    } else {
+      return 'btnok';
+    }
+  }
+
+  showActivite(pId: number) {
+    this.monRouteur.navigate(['consultAct/' + pId]);
   }
 }
