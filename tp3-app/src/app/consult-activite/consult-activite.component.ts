@@ -15,7 +15,8 @@ export class ConsultActiviteComponent {
   monParam: number;
   monParam2: string;
   isEdit: boolean = false;
-  inputText: string = '';
+  inputTitle: string = '';
+  inputDescription: string = '';
 
   constructor(
     private monRouteur: Router,
@@ -37,7 +38,11 @@ export class ConsultActiviteComponent {
 
   modifierElem() {
     if (this.isEdit) {
-      this.activiteService.objectifs[this.monParam] = this.inputText;
+      this.activiteService.updateItem(
+        this.monParam,
+        this.inputTitle,
+        this.inputDescription
+      );
     }
     this.isEdit = !this.isEdit;
   }

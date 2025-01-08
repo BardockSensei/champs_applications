@@ -1,6 +1,17 @@
-.container {
+.custom-container {
   display: grid;
   grid-template-columns: 50% auto;
+}
+
+.container-list {
+  padding: 0.4em 1.3em;
+  margin-top: 2em;
+  background: #2885c4;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
 }
 
 .col {
@@ -9,11 +20,11 @@
 
 .color-dark {
   background: #2885c4;
-  transform: rotate(2deg);
+  transform: rotate(1deg);
 }
 .color-light {
   background: #57b3f1;
-  transform: rotate(-2deg);
+  transform: rotate(-1deg);
 }
 
 input.txt {

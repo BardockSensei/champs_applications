@@ -1,22 +1,22 @@
-<div class="container color-dark">
+<div class="custom-container color-dark">
   <div class="col">
-    <p>Un élément de liste</p>
+    <p>Ajouter une activité</p>
   </div>
   <div class="col">
-    <p>Ma liste d'élément ({{ nbItems }})</p>
+    <p>Nombre d'activité actuels : {{ nbItems }}</p>
   </div>
 </div>
 
 <div
-  class="container color-light"
+  class="custom-container color-light"
   [@animobjectifs]="this.activiteService.objectifs.length"
 >
   <div class="col">
-    <p class="col">Un nouvel élément de liste</p>
+    <p class="col">Titre de l'activité :</p>
     <input
       type="text"
       class="txt"
-      [(ngModel)]="objectifText"
+      [(ngModel)]="objectifTitle"
       placeholder="..."
     />
     <input
@@ -28,12 +28,31 @@
     />
   </div>
   <div class="col">
-    <p
+    <p class="col">Description de l'activité :</p>
+    <input
+      type="text"
+      class="txt"
+      [(ngModel)]="objectifDescription"
+      placeholder="..."
+    />
+  </div>
+</div>
+
+<div class="container-list">
+  <p>Ma liste d'activité :</p>
+
+  <div class="grid-container">
+    <div
+      class="card border-primary m-auto w-100 mb-1"
+      style="max-width: 18rem"
       *ngFor="let elt of this.activiteService.objectifs; let i = index"
-      class="life-container"
       (click)="showActivite(i)"
     >
-      {{ elt }}
-    </p>
+      <div class="card-header">Activité n°{{ i }}</div>
+      <div class="card-body text-primary">
+        <h5 class="card-title">{{ elt.title }}</h5>
+        <p class="card-text">{{ elt.description }}</p>
+      </div>
+    </div>
   </div>
 </div>

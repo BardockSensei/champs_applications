@@ -55,8 +55,9 @@ import { ActiviteService } from '../services/activite.service';
 })
 export class HomeComponent {
   nbItems: number = 4;
-  btnText: string = 'Ajouter un élément';
-  objectifText: string = '';
+  btnText: string = "Ajouter l'activité";
+  objectifTitle: string = '';
+  objectifDescription: string = '';
 
   constructor(
     public activiteService: ActiviteService,
@@ -68,7 +69,13 @@ export class HomeComponent {
   }
 
   ajoutItem() {
-    this.activiteService.objectifs.push(this.objectifText);
+    this.activiteService.objectifs.push({
+      title: this.objectifTitle,
+      description:
+        this.objectifDescription == ''
+          ? 'Aucune description'
+          : this.objectifDescription,
+    });
     this.nbItems++;
     setTimeout(() => {
       this.monRouteur.navigate(['about']);
@@ -76,7 +83,7 @@ export class HomeComponent {
   }
 
   getAnimationClass() {
-    if (this.objectifText == '') {
+    if (this.objectifTitle == '') {
       return 'btn';
     } else {
       return 'btnok';

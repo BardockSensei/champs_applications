@@ -6,7 +6,15 @@
     @if (!isEdit) {
     <p>
       Nom de l'activité :
-      <strong>{{ this.activiteService.objectifs[this.monParam] }}</strong>
+      <strong>
+        {{ this.activiteService.objectifs[this.monParam].title }}
+      </strong>
+    </p>
+    <p>
+      Description de l'activité :
+      <strong>
+        {{ this.activiteService.objectifs[this.monParam].description }}
+      </strong>
     </p>
     } @else {
     <div class="box">
@@ -14,28 +22,44 @@
       <input
         type="text"
         class="txt"
-        [(ngModel)]="inputText"
-        placeholder="{{ this.activiteService.objectifs[this.monParam] }}"
+        [(ngModel)]="inputTitle"
+        placeholder="{{ this.activiteService.objectifs[this.monParam].title }}"
+      />
+    </div>
+    <div class="box">
+      <p>Description de l'activité :</p>
+      <input
+        type="text"
+        class="txt"
+        [(ngModel)]="inputDescription"
+        placeholder="{{
+          this.activiteService.objectifs[this.monParam].description
+        }}"
       />
     </div>
     }
 
     <input
-      type="submit"
-      class="update-btn"
+      type="button"
+      class="btn btn-success me-1"
       value="{{ isEdit ? 'Sauvegarder' : 'Modifier' }}"
       (click)="modifierElem()"
     />
 
     <input
-      type="submit"
+      type="button"
       value="Supprimer"
-      class="delete-btn"
+      class="btn btn-danger me-1"
       (click)="supprimeElem()"
     />
 
     @if (!isEdit) {
-    <input type="submit" value="Retour" class="btn" (click)="retour()" />
+    <input
+      type="button"
+      value="Retour"
+      class="btn btn-secondary"
+      (click)="retour()"
+    />
     }
   </li>
 
